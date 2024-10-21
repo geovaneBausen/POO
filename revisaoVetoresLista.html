@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revisão vetores</title>
+    <link rel="stylesheet" href="revisaoVetoresStyle.css">
+</head>
+
+<body>
+    <!-- Botões -->
+    <p class="botao">
+        <input class="nomeLabel" type="button" value="Listar Produtos" id="btListar">
+    </p>
+    <p class="botao">
+        <input class="nomeLabel" type="button" value="adcionar" id="btAdicionar">
+    </p>
+
+
+    <!-- Inputs para adicionar produtos -->
+    <div>
+        <label class="nomeLabel" for="produto">Produto:</label>
+        <input class="inputLabel" type="text" id="produto">
+    </div>
+    <div>
+        <label class="nomeLabel" for="preco">Preço:</label>
+        <input class="inputLabel" type="number" id="preco" step="0.01">
+    </div>
+    <div>
+        <label class="imputLabel" for="quantidade">Quantidade:</label>
+        <input class="inputLabel" type="number" id="quantidade">
+    </div>
+
+    <div>
+        <label for="categoria">Categoria:</label>
+        <select id="categoria">
+            <option value="Café da Manhã">Café da Manhã</option>
+            <option value="Almoço">Almoço</option>
+            <option value="Lanche">Lanche</option>
+            <option value="Jantar">Jantar</option>
+        </select>
+    </div>
+    <br>
+
+    <table id="minhaTabela"></table>
+
+    <!-- Campo para exclusão por índice -->
+    <div>
+        <label for="indiceExcluir">Índice do Produto a Excluir:</label>
+        <input type="number" id="indiceExcluir">
+    </div>
+    <button id="btExcluir">Excluir Produto</button>
+
+    <script src="listaDeCompras.js"></script>
+</body>
+
+</html>

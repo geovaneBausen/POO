@@ -1,0 +1,61 @@
+#minhaTabela {
+  border-collapse: collapse;
+  width: auto;
+  /* A tabela se ajusta ao conteúdo */
+}
+
+#minhaTabela td,
+#minhaTabela th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+#minhaTabela thead {
+  background-color: #d3d3d3;
+  /* Cor de fundo cinza no cabeçalho */
+}
+
+#minhaTabela td,
+#minhaTabela th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+
+
+
+
+/* Estilos para telas maiores (tablets e desktops) */
+@media (min-width: 768px) {
+  .tabela-container {
+    overflow-x: auto;
+    /* Barra de rolagem se necessário */
+  }
+}
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 767px) {
+  .tabela-container {
+    overflow-x: auto;
+    /* Mantém a barra de rolagem horizontal */
+  }
+
+  #minhaTabela {
+    display: block;
+    /* Permite a tabela se comportar melhor em telas menores */
+    width: fit-content;
+    /* A tabela se ajusta ao conteúdo em vez de esticar */
+  }
+
+  #minhaTabela td,
+  #minhaTabela th {
+    font-size: 18px;
+    /* Diminui o tamanho da fonte para telas menores */
+  }
+}
